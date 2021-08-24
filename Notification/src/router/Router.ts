@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import usersRouter from './UserRouter';
+import usersRouter from './NotificationRouter';
 
 const userRoutes = Router();
 
