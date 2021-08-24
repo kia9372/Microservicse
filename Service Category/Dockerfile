@@ -6,5 +6,6 @@ COPY package-lock.json* .
 RUN npm cache clean --force 
 RUN npm install
 COPY . .
-EXPOSE 3000
+EXPOSE 4000
+CMD npm run serve
 CMD npm run start
