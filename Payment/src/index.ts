@@ -4,7 +4,7 @@ import { DatabaseType } from './DatabaseWrapper/DataBaseType';
 import DatabaseWrapper from './DatabaseWrapper/DatabaseWrapper';
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 7000;
 app.use(express.json());
 
 new DatabaseWrapper(DatabaseType.MongoDBRegular).connect();
@@ -12,5 +12,5 @@ new DatabaseWrapper(DatabaseType.MongoDBRegular).connect();
 app.use(router)
 
 app.listen(port, () => {
-    console.log(`The application is listening on port ${port}`);
+    console.log(`Payment is listening on port ${port}`);
 })

@@ -12,5 +12,5 @@ new DatabaseWrapper(DatabaseType.MongoDBRegular).connect();
 app.use(router)
 
 app.listen(port, () => {
-    console.log(`The application is listening on port ${port}`);
+    console.log(` Staff Service is listening on port ${port}`);
 })

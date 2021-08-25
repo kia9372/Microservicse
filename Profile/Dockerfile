@@ -7,5 +7,4 @@ RUN npm cache clean --force
 RUN npm install
 COPY . .
 EXPOSE 6000
-CMD npm run serve
 CMD npm run start
