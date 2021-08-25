@@ -1,0 +1,58 @@
+version: "3"
+services:
+
+    profile:
+      image : kia9372/profile-srv
+      container_name: profile-srv
+      ports:
+          - "6000:6000"
+      environment:
+        PORT: 6000
+
+    office:
+      image : kia9372/office-srv
+      container_name: office-srv
+      ports:
+          - "8000:8000"
+      environment:
+        PORT: 8000
+
+    staff:
+      image : kia9372/staff-srv
+      container_name: staff-srv
+      ports:
+          - "3000:3000"
+      environment:
+        PORT: 3000
+      
+    service-category:
+      image : kia9372/service-category-srv
+      container_name: service-category-srv
+      ports:
+          - "4000:4000"
+      environment:
+        PORT: 4000
+
+    schedule:
+      image : kia9372/schedule-srv
+      container_name: schedule-srv
+      ports:
+          - "9000:9000"
+      environment:
+        PORT: 9000
+
+    payment:
+      image : kia9372/payment-srv
+      container_name: payment-srv
+      ports:
+          - "2358:2358"
+      environment:
+        PORT: 2358
+
+    notification:
+      image : kia9372/notification-srv
+      container_name: notification-srv
+      ports:
+          - "2200:2200"
+      environment:
+        PORT: 2200
